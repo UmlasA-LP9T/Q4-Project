@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>What's Next?</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=500, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <style type="text/css">
+ 	body{ background-image: url(mainpagebg.jpg);
+		  background-size: 170%;
+		  background-color: #BDD3DA;
+	}
+	.topnav {
+		background-image: linear-gradient(#DFF1F7, #5984A0);
+		padding-top: 5px;
+		padding-bottom: 5px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+
+
+	}
+	.topnav h3 { margin: 0px 15px ;
+		color: #0B2231;
+		font-family: American Typewriter, serif;
+
+	}
+	.topnav a{
+		color: #F9FDFF;
+		text-align: center;
+		text-decoration: none;
+		font-size: 17px;
+		font-family: American Typewriter, serif; 
+	}	
+	#logout img{
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		border-radius: 50%;
+	}
+	#one { margin: 0px 20px;
+	}
+	#three {
+		margin-left: 20px;
+	}
+
+	.searchsubmit {
+		font-family: American Typewriter, serif;
+		margin-left: 540px;
+	}
+	#feedback { margin-left: 34%;
+							margin-top: 5%;
+							border-radius: 5px;
+
+	}
+	.btn {	background-color: white;
+					border-color: lightsteelblue;
+					text-decoration: none;
+					margin-bottom: 30px;
+	}
+	#whatsnext {
+		text-align: center;
+		font-family: American Typewriter;
+		margin-top: 10px;
+	}
+	.container {
+		background-color: white;
+		border-color: lightsteelblue;
+		border-radius: 5px;
+		width: 50%;
+		height: 150px;
+	}
+	.container p {
+		font-family: serif;
+		text-align: center;
+	}
+ </style>
+
+<body>
+	<div class="topnav">
+	<div id="websitename">
+		<a href="mainpage.html">
+		<h3>Umlastic</h3>
+		</a>
+	</div>
+		<a id="myprofile" href="myprofile.html">My Profile</a>
+		<a id="one" href="page2.html">1st QTR</a>
+		<a id="two" href="page4.html">2nd QTR</a>
+		<a id="three" href="page3.html">What's Next?</a>
+		<form class="searchsubmit">
+		  <div id="demo">
+		  <input type="text"  placeholder="Search Here" class="searchbox">
+		  <input type="submit" value="search" class="searchbutton">
+		  <a id="logout" href="index.html">
+		  	<img src="person.png">
+		  </a>
+		    </div>
+		  </form>
+		  </div>
+	</div>
+<!---->
+	<div class="whats_next">
+		<h3 id="whatsnext">What's Next?</h3>
+		<div class="container">
+			<p>As an ICT student, I expect that next year it would be ajourney filled with discovery and growth. I expect to develop a solid understanding of programming fundamentals of Python. I look forward to honin my problem-solving skills through hands-on projects and challenges. Moreover, i expect Python to empower me to express my creativity and innovate, whether it's through building interactive applications or delving into the realms of machine learning and artificial intelligence. Overall, I'm excited to embrace Python as a tool for realizing my programming ambitions and unlocking new opportunities in the digital world.</p>
+		</div>
+	</div>
+<!---seperator---->	
+	<div class="feedback">
+	<textarea id="feedback" name="feedback" placeholder="Got any feedbacks?" style="width:500px; height: 200px;"></textarea>
+	<button type="Submit" class="btn btn-default"><a href="page3.html" onclick="submit()">Submit</a></button> 
+</div>
+<script type="text/javascript">
+		function submit() {
+			window.alert("Thank you for submitting your feedback!");// random
+		}
+	</script>
+<!---->
+</body>
+</html>
